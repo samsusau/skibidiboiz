@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Skibidiboiz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap');
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff99cc, #663399);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .container {
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            font-size: 72px; /* Increased font size */
+            margin: 0;
+            animation: textWave 2s infinite alternate;
+        }
+
+        p {
+            font-size: 30px; /* Increased font size for paragraphs */
+            margin: 20px 0 0;
+            line-height: 1.8;
+            animation: fadeInText 3s ease-in-out forwards 1s;
+        }
+
+        p span {
+            font-weight: 600; /* Make the third line stand out */
+            font-size: 36px; /* Larger font size for emphasis */
+            color: #ffccff; /* Softer color for a delicate touch */
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInText {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes textWave {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome</h1>
+        <p>Bọn mình là các Skibidiboiz,<br>chúng tớ đã chuẩn bị rất kĩ cho ngày này.<br><span>Đừng bỏ lỡ nhé!</span></p>
+    </div>
+</body>
+</html>
